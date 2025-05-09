@@ -1,0 +1,44 @@
+Diga se as afirmações abaixo são verdadeiras (V) ou falsas (F):
+
+1   ( V  ) Em Haskell, todas as funções são puras, ou seja, seus resultados dependem apenas dos argumentos passados.
+
+2   ( F  ) Haskell é uma linguagem imperativa, focada em alterar o estado do programa passo a passo.
+
+3   ( V  ) A avaliação preguiçosa (lazy evaluation) permite que Haskell só avalie expressões quando necessário.
+
+4   ( V  ) Em Haskell, funções podem ser passadas como argumentos para outras funções.
+
+5   ( V  ) O tipo Maybe em Haskell é usado para representar computações que podem falhar ou retornar "nada".
+
+6   ( F  ) Em Haskell, é obrigatório usar let ou where para definir funções.
+
+7   ( V  ) O operador ++ concatena listas em Haskell.
+
+8   ( F ) O tipo Int em Haskell representa números inteiros com tamanho ilimitado.
+
+8   ( V  ) A função map aplica uma função a cada elemento de uma lista, retornando uma nova lista.
+
+10   ( V  ) Haskell permite recursão, sendo uma das formas principais de repetição na linguagem.
+
+11   ( V  ) Em Haskell, o pattern matching pode ser usado para definir diferentes comportamentos de uma função dependendo da estrutura do dado.
+
+12   ( F  ) A função foldr percorre a lista da esquerda para a direita, acumulando o resultado.
+
+13   ( F  ) Uma função com tipo a -> b -> c em Haskell é equivalente a uma função que recebe uma tupla (a, b).
+
+14   ( V  ) O tipo IO em Haskell representa uma computação com efeitos colaterais, como leitura de arquivos ou impressão no terminal.
+
+15   ( V  ) Haskell permite definir tipos de dados personalizados usando a palavra-chave data.
+
+16   (  F ) A função filter aplica uma função a cada elemento da lista, transformando os elementos.
+
+17   ( V  ) O operador $ em Haskell é usado para facilitar a leitura, evitando parênteses.
+
+18   (  V ) Em Haskell, listas são estruturas imutáveis.
+
+19   (  V ) O tipo [Char] em Haskell é equivalente ao tipo String.
+
+20   ( V  ) A função >>= (bind) é usada para compor ações monádicas.
+
+
+Funções de alta ordem recebem outras funções como  parametro
