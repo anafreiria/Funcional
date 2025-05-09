@@ -1,0 +1,68 @@
+/**Soma**/
+
+soma 1 = 1
+soma n = soma(n-1) + n
+------------------------------------------/** Função Fatorial **/
+
+fatorial 0 = 1
+fatorial n = fatorial(n-1) * n
+------------------------------------------
+/** Função Fibonacci **/
+
+fib 0 = 0
+fib 1 = 1
+fib n = fib(n-1) + fib(n-2)
+-------------------------------------------
+
+/** Utilizando guardas **/
+
+guarda  x | (x == 0) = 0
+	  | (x == 1) = 1
+	  | otherwise = 10
+-------------------------------------------
+
+/** Variaveis anonimas **/
+
+my_and :: Bool -> Bool -> Bool
+my_and False _ = False
+my_and _ False = False
+my_and True True = True
+
+-------------------------------------------
+/** Tuplas, depois de criadas não podem ser
+modificadas, definidas por parênteses**/
+
+func :: (Int, Int) ->  (Int, Int) ->  (Int, Int)
+func :: (a, b) (c, d) = (a+c, b+d)
+
+Ex: (1, 2) (2, 4) = (3, 6)
+
+//Extraindo dados de tuplas
+fst ("marcos" 73) = marcos
+snd ("marcos" 73) = 73
+
+---------------------------------------------------
+/** Definindo Novos Tipos*/
+
+type Nome = String
+type Idade = Int
+type Linguagem= String
+type Pessoa = (Nome, Idade, Linguagem)
+
+pessoa :: Pessoa
+pessoa = ("joao", 20, "java")
+
+my_fst :: Pessoa -> Nome
+my_fst (n, i, l) = n
+
+----------------------------------------------------
+/** Listas **/
+
+Listas são representadas por colchetes []
+Lista vazia:[]
+Lista normal: [1, 2, 3]
+O último nó da lista contém uma lista vazia
+
+
+
+
