@@ -17,6 +17,10 @@ f1 c x
     |otherwise = a * f1 c b
         where (a:b) = x
 
+f1_j :: (Int->Int->Int)->[Int]->Int
+f1_j op [] = ((op) 0 (-1)) +1
+f1_j op (a:b) = (op) a (f1_j op b)
+
 {- reescreva f1 usando casamento de padrão -}
 f2::Char->[Int]->Int
 f2 c x = f2_aux (isDigit c) x
