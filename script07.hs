@@ -42,15 +42,14 @@ f3 c x
 --    Esta função é didática, pois mostra o uso de função de alta ordem
 --    Contudo, o booleano não seria necessário se conseguíssemos fazer casamento 
 --    de padrão com a função parâmetro-}
-f4 :: Char -> (Int->Int->Int) -> [Int] -> Int
-f4 c op x = f4_aux (isDigit c) op x
-
-
-f4_aux :: Bool->(Int->Int->Int)->[Int]->Int
-f4_aux True op [] = 0
-f4_aux True op (a:b) = op a (f4_aux True op b)
-f4_aux False op [] = 1
-f4_aux False op (a:b) = op a (f4_aux False op b)
+--f4::Char->(Int->Int->Int)->[Int]->Int
+--f4 c op x = f4_aux (isDigt c) op x
+ 
+--f4_aux :: Bool->(Int->Int->Int)->[Int]->Int
+ {- para lista de pelo menos um elemento -}
+f4::(Int->Int->Int)->[Int]->Int
+f4 op [a] = a
+f4 op (a:x) = (op) a (f4 op x) 
 
 
 --Funções de alta ordem, exemplo com soma e subtração
@@ -62,3 +61,8 @@ sumLsubL op (a:b) = op a (sumLsubL op b)
 -- função map aplica uma função a cada elemento de uma lista
 alteraL f [] = []
 alteraL f (a:b) = f a : alteraL f b
+
+-- função fold aplica uma função a cada elemento de uma lista
+fold :: (a->a->a) -> [a] -> a
+fold op [a] = a
+fold op (a:b) = op a (fold op b)
